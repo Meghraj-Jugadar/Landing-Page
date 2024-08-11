@@ -1,14 +1,16 @@
 .customlanding-page {
-    min-height: 250px;
-    // border: 2px solid red;
+    height: 100vh;
+    display: grid;
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(213, 29, 253, 1) 46%, rgba(252, 176, 69, 1) 100%);
 
     .homenav {
         display: flex;
-        gap: 8px;
+        gap: 16px;
+        height: 16px;
         padding: 20px;
         float: right;
+        justify-content: end;
     }
 
     .homecontent {
@@ -16,14 +18,35 @@
         margin-left: 20px;
 
         .spancontent {
-            .contenthead {margin: 0px;}
-            .btngetstarted{
+            .contenthead {
+                margin: 0px;
+            }
+
+            .btngetstarted {
                 color: white;
                 height: 35px;
-                background:#3221f7;
+                background: #3221f7;
                 border-radius: 6px;
                 padding: 10px 16px;
             }
+        }
+    }
+
+    .footer {
+        border-top: 1px solid gray;
+        display: flex;
+
+        .footer-left {
+            padding: 16px;
+            height: min-content;
+        }
+
+        .footer-right {
+            position: absolute;
+            gap: 10px;
+            right: 0;
+            display: grid;
+            padding: 16px;
         }
     }
 
