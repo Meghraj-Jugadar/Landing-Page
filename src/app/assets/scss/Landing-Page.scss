@@ -5,12 +5,23 @@
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(213, 29, 253, 1) 46%, rgba(252, 176, 69, 1) 100%);
 
     .homenav {
+        border-bottom: 1px solid rgb(167, 165, 243);
         display: flex;
         gap: 16px;
         height: 16px;
         padding: 20px;
         float: right;
+        padding-bottom: 40px;
         justify-content: end;
+
+        .navSwitch{
+            cursor: pointer;
+        }
+
+        .navSwitch:hover{
+            color: rgb(229, 255, 0);
+            cursor: pointer;
+        }
     }
 
     .homecontent {
@@ -29,11 +40,34 @@
                 border-radius: 6px;
                 padding: 10px 16px;
             }
+
+            .p-button {
+                font-size: 14px;
+                background: lawngreen;
+                color: black;
+                border-radius: 8px;
+                height: 36px;
+                border: 1px solid lawngreen;
+            }
+
+            .p-button:hover{
+                background: rgb(237, 242, 232);
+                border: 1px solid rgb(237, 242, 232);
+            }
+        }
+
+        .imagesDiv {
+            .imgDiv {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
         }
     }
 
     .footer {
-        border-top: 1px solid gray;
+        border-top: 2px solid rgb(167, 165, 243);
         display: flex;
 
         .footer-left {
@@ -47,6 +81,20 @@
             right: 0;
             display: grid;
             padding: 16px;
+
+            .p-button {
+                font-size: 14px;
+                background: rgb(0, 160, 252);
+                color: black;
+                border-radius: 8px;
+                height: 36px;
+                border: 1px solid rgb(0, 160, 252);
+            }
+
+            .p-button:hover {
+                background: rgb(205, 231, 246);
+                border: 1px solid rgb(205, 231, 246);
+            }
         }
     }
 
